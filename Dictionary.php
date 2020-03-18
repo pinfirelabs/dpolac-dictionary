@@ -37,7 +37,7 @@ class Dictionary implements \Countable , \ArrayAccess , \Serializable , \Iterato
             return 'string:' . $value;
         } elseif (is_int($value)) {
             return 'int:' . $value;
-        } elseif (is_real($value)) {
+        } elseif (is_float($value)) {
             return 'float:' . $value;
         } elseif (is_bool($value)) {
             return 'bool:' . ((int)$value);
